@@ -4,7 +4,7 @@ namespace ShiptorRussiaApiClient\Client\Api\ShippingEndpoint\Request;
 use ShiptorRussiaApiClient\Client\Api\ShippingEndpoint\Request\GenericRequest as GenericShippingRequest,
     ShiptorRussiaApiClient\Client\Api\ShippingEndpoint\Model\Package as DeletePackageResult;
 
-class Package extends GenericShippingRequest{
+class DeletePackage extends GenericShippingRequest{
     protected $name = "removePackage";
     protected function initFields(){
         $this->getFieldsCollection()
