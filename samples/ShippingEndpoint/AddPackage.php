@@ -8,7 +8,7 @@ $shiptor = new Shiptor(["API_KEY" => "<apikey>"]);
 
 $request = $shiptor->ShippingEndpoint()->addPackage()->setLength(10)->setWidth(20)->setHeight(10)
         ->setWeight(3)->setCod(4500)->setDeclaredCost(4500)->setExternalId("sdk123")->setShippingMethod(17)
-        ->setComment("Тест!")->toMoscow()->setName("Тест")->setSurname("Тестов")->setPatronimic("Тестович")
+        ->setComment("Тест!")->toMoscow()->setName("Тест")->setSurname("Тестов")->setPatronymic("Тестович")
         ->setEmail("test@test.ru")->setPhone("+79123456789")->setRegion("Москва")->setSettlement("Москва")
         ->setAddressLine("ул Тестовая 21")->forRu()->setPostalCode("101000");
 $request->newProduct()->setShopArticle("43")->setCount(1)->setPrice(2000);

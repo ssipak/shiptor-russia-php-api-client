@@ -57,7 +57,7 @@ class AddPackageExport extends AddPackage{
     public function setSurname($surname){
         throw new UnavailableMethod(array(__FUNCTION__,__CLASS__));
     }
-    public function setPatronimic($patronimic){
+    public function setPatronymic($patronymic){
         throw new UnavailableMethod(array(__FUNCTION__,__CLASS__));
     }
     public function setKladrId($kladr){

@@ -165,8 +165,8 @@ class AddPackage extends GenericShippingRequest{
         $this->getAddress()->get("surname")->setValue($surname);
         return $this;
     }
-    public function setPatronimic($patronimic){
-        $this->getAddress()->get("patronymic")->setValue($patronimic);
+    public function setPatronymic($patronymic){
+        $this->getAddress()->get("patronymic")->setValue($patronymic);
         return $this;
     }
     public function setReceiver($receiver){
