@@ -57,8 +57,8 @@ class AddDeliveryPointPackages extends GenericShippingRequest{
     public function getAddress(){
         return $this->getShipment()->get('address');
     }
-    public function setReciever($reciever){
-        return $this->getAddress()->get("receiver")->setValue($reciever);
+    public function setReceiver($receiver){
+        return $this->getAddress()->get("receiver")->setValue($receiver);
     }
     public function setEmail($email){
         return $this->getAddress()->get("email")->setValue($email);

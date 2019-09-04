@@ -4,7 +4,7 @@ namespace ShiptorRussiaApiClient\Client\Api\ShippingEndpoint\Model\AddPackage\De
 use ShiptorRussiaApiClient\Client\Core\Collection\ArrayCollection;
 
 class Address extends ArrayCollection{
-    public function getReciever(){
+    public function getReceiver(){
         return $this->get("receiver");
     }
     public function getName(){

@@ -76,7 +76,7 @@ if($response instanceof ErrorResponse):?>
         <?php
         $address = $departure->getAddress();
         ?>
-        <li><?php echo $address->getReciever()?></li>
+        <li><?php echo $address->getReceiver()?></li>
         <li><?php echo $address->getName()?> <?php echo $address->getPatronymic()?> <?php echo $address->getSurname()?></li>
         <li><?php echo $address->getEmail()?></li>
         <li><?php echo $address->getPhone()?></li>

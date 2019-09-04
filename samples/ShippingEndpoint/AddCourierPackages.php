@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 $shiptor = new Shiptor(["API_KEY" => "<apikey>"]);
 
-$request = $shiptor->ShippingEndpoint()->addCourierPackages()->forDpd()->setReciever("Тест Тестов Тестов")
+$request = $shiptor->ShippingEndpoint()->addCourierPackages()->forDpd()->setReceiver("Тест Тестов Тестов")
         ->setSurname("Тестов")->setPatronymic("Тестович")->setEmail("test@test.ru")
         ->setPhone("+79123456789")->fromRu()->setRegion("Москва")->setSettlement("Москва")
         ->setPostalCode("101000")->setStreet("ул. Тестовая")->setHouse("21")->setApartment("7")

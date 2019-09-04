@@ -78,8 +78,8 @@ class AddCourierPackages extends GenericShippingRequest{
     public function getAddress(){
         return $this->getShipment()->get("address");
     }
-    public function setReciever($reciever){
-        $this->getAddress()->get("receiver")->setValue($reciever);
+    public function setReceiver($receiver){
+        $this->getAddress()->get("receiver")->setValue($receiver);
         return $this;
     }
     public function setName($name){
