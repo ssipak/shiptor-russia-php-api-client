@@ -216,9 +216,17 @@ class AddPackage extends GenericShippingRequest{
     public function toMoscow(){
         return $this->setKladrId(self::KLADR_MOSCOW);
     }
+
+    /**
+     * @return PackageProduct
+     */
     public function newProduct(){
         return $this->getFieldsCollection()->get('products')->_new();
     }
+
+    /**
+     * @return PackageService
+     */
     public function newService(){
         return $this->getFieldsCollection()->get('services')->_new();
     }
