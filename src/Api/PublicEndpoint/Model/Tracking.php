@@ -1,6 +1,7 @@
 <?php
 namespace ShiptorRussiaApiClient\Client\Api\PublicEndpoint\Model;
 
+use ShiptorRussiaApiClient\Client\Core\Collection\GenericCollection;
 use ShiptorRussiaApiClient\Client\Core\Model\Result,
     ShiptorRussiaApiClient\Client\Core\Model\Checkpoint,
     ShiptorRussiaApiClient\Client\Core\Collection\GenericCollection as CheckpointsCollection;
@@ -13,6 +14,10 @@ class Tracking extends Result{
     private function setCheckpoints(){
         $this->checkpoints = new CheckpointsCollection($this->get("checkpoints"),Checkpoint::class);
     }
+
+    /**
+     * @return GenericCollection|Checkpoint[]
+     */
     public function getCheckpoints(){
         return $this->checkpoints;
     }

@@ -38,7 +38,10 @@ class Package extends SimplePackage{
     public function getShipment(){
         return $this->shipment;
     }
-    public function getCheckpoint(){
+    /**
+     * @return GenericCollection|PackageCheckpoint[]
+     */
+    public function getCheckpoints(){
         return $this->checkpoints;
     }
     public function getOrders(){
