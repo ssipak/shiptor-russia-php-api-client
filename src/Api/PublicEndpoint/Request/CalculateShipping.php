@@ -37,8 +37,8 @@ class CalculateShipping extends GenericRequest{
         return $this->setField("weight",$value);
     }
     public function setCod($value){
-        if($value < 10){
-            $this->setDeclaredCost(10);
+        if($value < 0){
+            $this->setDeclaredCost(0);
         }else{
             $this->setDeclaredCost($value);
         }
@@ -98,8 +98,11 @@ class CalculateShipping extends GenericRequest{
     public function forCDEK(){
         return $this->setCourier(self::COURIER_CDEK);
     }
-    public function forSPSR(){
-        return $this->setCourier(self::COURIER_SPSR);
+    public function forPec(){
+        return $this->setCourier(self::COURIER_PEC);
+    }
+    public function forSber(){
+        return $this->setCourier(self::COURIER_SBER);
     }
     public function getResponseClassName() {
         return CalculateShippingResult::class;
